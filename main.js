@@ -13,7 +13,7 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
-
+window.addEventListener('scroll', scrollActive)
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
@@ -39,7 +39,7 @@ function scrollActive(){
         }
     })
 }
-window.addEventListener('scroll', scrollActive)
+
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
